@@ -25,11 +25,11 @@ int main()
 	std::cout << "How many Balcony Seats Tickets do you want" << std::endl;
 	std::cin >> balconySeatsTickets; 
 
-	orchestraSeatsTotal = orchestraSeatsTickets * orchestraSeatsPrice; 
-	mainFloorSeatsTotal = mainFloorSeatsTickets * mainFloorSeatsPrice; 
-	balconySeatsTotal = balconySeatsTickets * balconySeatsPrice; 
+	orchestraSeatsTotal = orchestraSeatsTickets * orchestraSeatsPrice / 100 ; 
+	mainFloorSeatsTotal = mainFloorSeatsTickets * mainFloorSeatsPrice / 100 ; 
+	balconySeatsTotal = balconySeatsTickets * balconySeatsPrice / 100; 
 
-	total = orchestraSeatsTotal + mainFloorSeatsTotal + balconySeatsTotal;
+	total = orchestraSeatsTotal + mainFloorSeatsTotal + balconySeatsTotal / 100;
 
 	std::cout << "Your total tickets for Orchestra Seats $ " << orchestraSeatsTotal << std::endl;
 	std::cout << "Your total tickets for Main Floor Seats $ " << mainFloorSeatsTotal<< std::endl;
