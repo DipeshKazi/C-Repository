@@ -25,6 +25,9 @@ int main()
 	std::cout << "Enter a plural noun " << std::endl;
 	std::cin >> Pluralnoun; 
 
+	std::cout << " The " << color << "Dargon is the " << wordendinginest << " dargon of all." << std::endl;
+	std::cout << "It has " << BodyPart << "and a " << animal << "shaped like a " << noun << std::endl; 
+	std::cout << "it loves to eat" << Pluralnoun << ", although it will feast on nearly anything" << std::endl;
 
 
 
