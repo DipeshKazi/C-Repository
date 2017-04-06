@@ -9,24 +9,24 @@ int main()
 	double eggPrice = 0.25;
 
 
-	double eggOrdered , dozenEgg , remainderEgg , total , remainder; 
+	double eggOrdered , dozenEgg , totalegg , remainderegg , total; 
 	std::cout << "How many eggs could you like to buy" << std::endl; 
 	std::cin >> eggOrdered; 
 
 	dozenEgg = eggOrdered / dozen;
-	remainder = remainderEgg * eggPrice;
+	remainderegg = eggOrdered % 12;
 	
 
 	
 
-
-	total = dozenEgg * remainder; 
+	total = dozenEgg * dozenPrice;
+	totalegg = dozenEgg * remainderegg; 
 	
 	
 
-	std::cout << "You have " << dozenEgg << " dozen egg" << std::endl;
 	
-	std::cout << "You price for egg   " << total << std::endl;
+	std::cout << "Your price for " << dozenEgg << " dozen egg  is  $" << total << std::endl;
+	std::cout << "You price for egg   " << totalegg << std::endl;
 	
 
 	

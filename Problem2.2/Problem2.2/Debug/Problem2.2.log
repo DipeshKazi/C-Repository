@@ -1,11 +1,11 @@
-﻿Build started 4/5/2017 10:21:28 AM.
+﻿Build started 4/5/2017 10:31:31 AM.
      1>Project "C:\Users\DT300164\Desktop\C-Repository\Problem2.2\Problem2.2\Problem2.2.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
-     1>c:\users\dt300164\desktop\c-repository\problem2.2\problem2.2\source.cpp(18): error C4700: uninitialized local variable 'remainderEgg' used
+     1>c:\users\dt300164\desktop\c-repository\problem2.2\problem2.2\source.cpp(17): error C2296: '%' : illegal, left operand has type 'double'
      1>Done Building Project "C:\Users\DT300164\Desktop\C-Repository\Problem2.2\Problem2.2\Problem2.2.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.39
+Time Elapsed 00:00:00.32
