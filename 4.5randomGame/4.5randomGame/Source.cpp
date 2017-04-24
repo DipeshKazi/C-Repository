@@ -9,7 +9,10 @@ int main()
 {
 	int number;
 	int guess;
+	int die;
 	int tries;
+	int tries2;
+	int tries3;
 
 	int Uinput;
 	
@@ -54,16 +57,16 @@ int main()
 		{
 			number = rand() % 500 + 1;;
 			std::cout << "Enter a number between 1 and 100" << std::endl;
-			std::cin >> guess;
-			if (number<guess)
+			std::cin >> die;
+			if (number<die)
 				std::cout << "Too high try again" << std::endl;
-			tries = 3;
-		} while (number>guess);
+			tries2 = 3;
+		} while (number>die);
 		std::cout << "Too low try again" << std::endl;
-		tries--;
-		if (number == guess)
+		tries2--;
+		if (number == die)
 			std::cout << "You Won  " << std::endl;
-		std::cout << "You got the right number in " << tries << " tries";
+		std::cout << "You got the right number in " << tries2 << " tries";
 		do
 		{
 			std::cout << "Would you like to play again?  Enter Yes";
@@ -83,13 +86,13 @@ int main()
 			std::cin >> guess;
 			if (number<guess)
 				std::cout << "Too high try again" << std::endl;
-			tries = 5;
+			tries3 = 5;
 		} while (number>guess);
 		std::cout << "Too low try again" << std::endl;
-		tries--;
+		tries3--;
 		if (number == guess)
 			std::cout << " You Won  " << std::endl;
-		std::cout << "You got the right number in " << tries << " tries";
+		std::cout << "You got the right number in " << tries3 << " tries";
 		do
 		{
 			std::cout << "Would you like to play again?  Enter Yes";
