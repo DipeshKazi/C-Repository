@@ -9,7 +9,11 @@ int main()
 {
 	int number;
 	int guess;
+	int guess2;
 	int die;
+
+
+
 	int tries;
 	int tries2;
 	int tries3;
@@ -83,14 +87,14 @@ int main()
 		{
 			number = rand() % 100 + 1;;
 			std::cout << "Enter a number between 1 and 100" << std::endl;
-			std::cin >> guess;
-			if (number<guess)
+			std::cin >> guess2;
+			if (number<guess2)
 				std::cout << "Too high try again" << std::endl;
 			tries3 = 5;
-		} while (number>guess);
+		} while (number>guess2);
 		std::cout << "Too low try again" << std::endl;
 		tries3--;
-		if (number == guess)
+		if (number == guess2)
 			std::cout << " You Won  " << std::endl;
 		std::cout << "You got the right number in " << tries3 << " tries";
 		do
