@@ -13,14 +13,14 @@ int main()
 
 	///srand(static_cast<int>(time(0)));
 
-	for (int x = 1; x = 6; x += 1)
+	for (int x = 1; x < 6; x += 1)
 	{
-		num1 = 1 + rand() % (10 + 1); 
-		num2 = 1 + rand() % (10 + 1);
+		num1 = 1 + rand() % (10 - 1  + 1); 
+		num2 = 1 + rand() % (10 - 1 + 1);
         
 		correctAnswer = num1 + num2; 
 
-		std::cout << "What is the sum of" << num1 << " + " << num2 << correctAnswer;
+		std::cout << "What is the sum of" << num1 << " + " << num2 << " ? ";
     
 	std::cin >> userAnswer;
 
