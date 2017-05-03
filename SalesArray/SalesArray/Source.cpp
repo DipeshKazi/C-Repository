@@ -2,10 +2,12 @@
 #include <iomanip>
 
 
+
 int main() {
 
 	//Declare Array
 	double sales[4] = { 0.0 };
+	
 
 	//Store data in the array
 	for (int sub = 0; sub < 4; sub += 1)
@@ -23,8 +25,12 @@ int main() {
 		std::cout << sales[sub] << std::endl;
 	}
 
+	double  result = 0;
+	for (int n   = 0;  n < 4;  ++n){
+		result = sales[n] + result;
+	}
 
-	std::cout << "Total for all for region " << 
+	std::cout << "Total for all for region " << result << std::endl;
 	system("pause"); 
 	return 0;
 }
