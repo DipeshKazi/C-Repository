@@ -5,6 +5,7 @@ int addition[] = { 23, 6, 47, 35, 2, 14 };
 int n, result = 0;
 int high = 0;
 int odd = 0;
+int even = 0;
 
 
 int main() {
@@ -32,13 +33,13 @@ int main() {
 	//Odd Number 
 	for (n = 0; n < 6; ++n)
 	{
-		if (addition[n] % 2)
+		if (even != addition[n] % 2)
 			odd = addition[n];
 
 		std::cout << " odd Number  " << odd << std::endl;
 	}
 
-
+	
 
 	system("pause");
 	return 0;
